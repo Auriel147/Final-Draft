@@ -1,0 +1,36 @@
+.grid {
+  display:grid;
+  background-color: black;
+  height:1500px;
+  width: 1500px;
+  grid-gap: 10px;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 500px 500px 500px;
+  grid-template-areas:
+	"b b b a a a a a a a a a"
+	"b b b c c c c c c c c c"
+	"b b b d d d d d d d d d"
+}
+.a{
+	grid-area: a;
+
+}
+.b{
+	grid-area: b;
+}
+
+.c{
+	grid-area: c;
+}
+
+.d{
+	grid-area: d;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
+
